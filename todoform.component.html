@@ -1,0 +1,15 @@
+<h1 class="text-center text-primary">TODO APP IN ANGULAR</h1>
+<div class="row">
+    <div class="col-6">
+        <div class="form-group">
+            <label for="newtask">Add New</label>
+            <input type="text" class="form-control" id="newtask" [(ngModel)]="todoinput">
+        </div>
+    </div><!-- col-6 half row occures -->
+    <div class="col-3 mt-4"><!--means mt margin top -->
+        <button class="btn btn-success" [disabled]="!todoinput.length" (click)="addtask()">Add</button>
+    </div>
+    <!-- <div class="col-3 mt-4">
+        <button class="btn btn-danger" [disabled]="!todoinput.length" (click)="resttask()">Reset</button>
+    </div>  -->
+</div>
